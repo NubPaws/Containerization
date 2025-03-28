@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Random Numbers Client</title>
+</head>
+<body>
+  <h1>Random Numbers Demo</h1>
+  <p>Enter a number:</p>
+  <input type="number" id="numInput" value="5" />
+  <button id="btnFetch">Fetch Random Numbers</button>
+
+  <h2>Results (sorted)</h2>
+  <ul id="results"></ul>
+
+  <script>
+    const btnFetch = document.getElementById('btnFetch');
+    const numInput = document.getElementById('numInput');
+    const resultsList = document.getElementById('results');
+
+    btnFetch.addEventListener('click', async () => {
+      const n = parseInt(numInput.value) || 1;
+      resultsList.innerHTML = 'Loading...';
+
+      try {
+        // We only need to fetch from /random?n= because the page
+        // is served from the same origin as the Node server
+        const response = await fetch(`/random?n=${n}`);
+        if (!response.ok) {
+          throw new Error('Server error');
+        }
+        const numbers = await response.json();
+        // Sort ascending
+        numbers.sort((a, b) => a - b);
+
+        // Display results
+        resultsList.innerHTML = '';
+        numbers.forEach(num => {
+          const li = document.createElement('li');
+          li.textContent = num;
+          resultsList.appendChild(li);
+        });
+      } catch (err) {
+        resultsList.textContent = 'Error fetching random numbers.';
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>

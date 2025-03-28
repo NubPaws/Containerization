@@ -19,8 +19,8 @@ This tutorial will be aimed at beginners who want/need to containerize their pro
    2. [Windows using WSL](./guides/setup.md#windows-using-wsl)
    3. [MacOS](./guides/setup.md#macos)
    4. [Linux](./guides/setup.md#linux)
-2. [Project layout explanation]()
-3. [Containerizing]()
+2. [Project layout explanation](./guides/project.md)
+3. [Containerizing](./guides/containerization.md)
 
 ## Terminology
 - **Docker**
