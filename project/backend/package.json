@@ -1,5 +1,5 @@
 {
-  "name": "node-express-server",
+  "name": "backend",
   "version": "1.0.0",
   "description": "Express server that requests random numbers from C++ TCP server",
   "main": "server.js",

@@ -16,7 +16,6 @@ services:
       context: ./
       dockerfile: backend/Dockerfile
     container_name: backend
-    # We pass in environment variables to tell Node where to find the C++ server
     environment:
       - SERVER_PORT=3000
       - CPP_SERVER_HOST=server

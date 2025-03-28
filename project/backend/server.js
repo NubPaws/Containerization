@@ -11,7 +11,7 @@ const CPP_HOST = process.env.CPP_SERVER_HOST || 'localhost';
 const CPP_PORT = parseInt(process.env.CPP_SERVER_PORT || '5000');
 
 // Serve static files (the web client) from a "public" directory
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(import.meta.dirname, 'public')));
 
 // Endpoint: /random?n=
 app.get('/random', (req, res) => {
