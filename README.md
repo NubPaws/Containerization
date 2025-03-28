@@ -14,10 +14,11 @@ If you are interested, you can look at the [Why should you containerize?](#why-s
 This tutorial will be aimed at beginners who want/need to containerize their project.
 
 ## Menu
-1. [How to setup docker]()
-   1. [Windows]()
-   2. [MacOS X]()
-   3. [Linux]()
+1. [How to setup docker](./guides/setup.md)
+   1. [Windows](./guides/setup.md#windows)
+   2. [Windows using WSL](./guides/setup.md#windows-using-wsl)
+   3. [MacOS](./guides/setup.md#macos)
+   4. [Linux](./guides/setup.md#linux)
 2. [Project layout explanation]()
 3. [Containerizing]()
 
