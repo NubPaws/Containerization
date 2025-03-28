@@ -15,10 +15,10 @@ This tutorial will be aimed at beginners who want/need to containerize their pro
 
 ## Menu
 1. [How to setup docker](./guides/setup.md)
-   1. [Windows](./guides/setup.md#windows)
-   2. [Windows using WSL](./guides/setup.md#windows-using-wsl)
-   3. [MacOS](./guides/setup.md#macos)
-   4. [Linux](./guides/setup.md#linux)
+   - [Windows](./guides/setup.md#windows)
+   - [Windows using WSL](./guides/setup.md#windows-using-wsl)
+   - [MacOS](./guides/setup.md#macos)
+   - [Linux](./guides/setup.md#linux)
 2. [Project layout explanation](./guides/project.md)
 3. [Containerizing](./guides/containerization.md)
 
