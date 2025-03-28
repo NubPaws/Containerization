@@ -42,7 +42,7 @@ EXPOSE 5000
 CMD ["./server"]
 ```
 
-*Note.* We provide the `CMD` line an array of our command we want to run. If we have a few arguments, we would have seperated them using commands as such `CMD ["./server", "--no-debug"]`.
+*Note.* We provide the `CMD` line an array of our command we want to run. If we have a few arguments, we would have separated them using commands as such `CMD ["./server", "--no-debug"]`.
 
 *Note.* The `RUN` command is used to specify commands when we are building our container. The `CMD` command on the other hand specifies what command will be ran whenever the container starts (as we will build the container once and run it many times).
 
