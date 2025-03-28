@@ -13,6 +13,8 @@ If you are interested, you can look at the [Why should you containerize?](#why-s
 
 This tutorial will be aimed at beginners who want/need to containerize their project.
 
+*Note.* This tutorial was written by me! I may have gotten a few things wrong. If you notice a mistake that is not the fault of simplifications, feel free to create a pull request. If you are not sure, you can also contact me and I will look into it as soon as I can.
+
 ## Menu
 1. [How to setup docker](./guides/setup.md)
    - [Windows](./guides/setup.md#windows)
